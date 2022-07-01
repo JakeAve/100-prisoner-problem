@@ -8,6 +8,10 @@ In 2009 Philippe Flajolet and Robert Sedgewick summarized the riddle as follows:
 
 The director of a prison offers 100 death row prisoners, who are numbered from 1 to 100, a last chance. A room contains a cupboard with 100 drawers. The director randomly puts one prisoner's number in each closed drawer. The prisoners enter the room, one after another. Each prisoner may open and look into 50 drawers in any order. The drawers are closed again afterwards. If, during this search, every prisoner finds his number in one of the drawers, all prisoners are pardoned. If just one prisoner does not find his number, all prisoners die. Before the first prisoner enters the room, the prisoners may discuss strategy — but may not communicate once the first prisoner enters to look in the drawers. What is the prisoners' best strategy?
 
+## Prereqs
+
+You need to have deno installed https://deno.land/. Check with the `deno -h` command.
+
 ## Strategies
 
 Strategies can be created and added to the `./strategies` directory. Since there is no collaboration between prisoners after the first one enters, only the drawers and the current prisoner's number are passed to the function. A valid stategy must be the default export of the module.
