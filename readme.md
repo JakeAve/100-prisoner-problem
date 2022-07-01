@@ -8,6 +8,8 @@ In 2009 Philippe Flajolet and Robert Sedgewick summarized the riddle as follows:
 
 The director of a prison offers 100 death row prisoners, who are numbered from 1 to 100, a last chance. A room contains a cupboard with 100 drawers. The director randomly puts one prisoner's number in each closed drawer. The prisoners enter the room, one after another. Each prisoner may open and look into 50 drawers in any order. The drawers are closed again afterwards. If, during this search, every prisoner finds his number in one of the drawers, all prisoners are pardoned. If just one prisoner does not find his number, all prisoners die. Before the first prisoner enters the room, the prisoners may discuss strategy — but may not communicate once the first prisoner enters to look in the drawers. What is the prisoners' best strategy?
 
+[Explanations and solutions below](#Explanations-of-the-proplem-and-loop-strategy)
+
 ## Prereqs
 
 You need to have deno installed https://deno.land/. Check with the `deno -h` command.
@@ -98,3 +100,10 @@ Will usually output the following table:
 │ total  │    100 │
 └────────┴────────┘
 ```
+
+## Explanations of the proplem and loop strategy
+
+- [Original Paper](https://www.brics.dk/RS/03/44/BRICS-RS-03-44.pdf)
+- [Veritasium - Youtube](https://www.youtube.com/watch?v=iSNsgj1OCLA)
+- [minutephysics - Youtube](https://www.youtube.com/watch?v=eivGlBKlK6M)
+- [Distribution of cycle lengths - math.exchange](https://math.stackexchange.com/questions/1364438/what-is-the-distribution-of-cycle-lengths-in-derangements-in-particular-expect/1364797#1364797)
