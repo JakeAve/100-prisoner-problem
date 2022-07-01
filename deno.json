@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "simulate": "deno run --allow-read=./strategies simulate.ts"
+  }
+}
