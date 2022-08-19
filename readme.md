@@ -28,7 +28,7 @@ Strategies can be created and added to the `./strategies` directory. Since there
 
 - `drawers` `<Drawer[]>` the drawers the prisoner has to choose from. This array is generated randomly after each iteration of a simulation.
 - `prisonerNumber` `<number>` the prisoner number of the current prisoner
-- Returns: `<Drawers[]>` An array of drawers, but it must be no more than half the quantity that enters the callback
+- Returns: `<Drawers[]>` The drawers the prisoner opens as an array of drawers. It must be no more than half the quantity that enters the callback
 
 ### Example
 
@@ -62,10 +62,10 @@ export default sequentialStrategy;
 Run the simulation using a Deno task with arguments.
 
 ```bash
-deno task simulate <strategy> [-i | --iterations] [-p | --prisoners]
+deno task simulate <strategy-file-name> [-i | --iterations] [-p | --prisoners]
 ```
 
-### `<strategy>`
+### `<strategy-file-name>`
 
 The strategy argument uses the filename of the strategy INCLUDING the extension.
 
